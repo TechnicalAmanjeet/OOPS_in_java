@@ -32,42 +32,46 @@ public class Main {
 //        System.out.println(students); // students ref. var might not have been initialized.
 
 
-        Student s1;  // initializing ref. variable of type student.
-        s1 = new Student();  // pointing ref. variable s to type student variable in heap memory.
-
-        // the above two line we can do in a single line.
-        Student s2 = new Student(); // initializing and pointing / declaring.
-
-        System.out.println(s1);  // gives the definition of obj => i.e what is the datatype/class of object;
+//        Student s1;  // initializing ref. variable of type student.
+//        s1 = new Student();  // pointing ref. variable s to type student variable in heap memory.
+//
+//        // the above two line we can do in a single line.
+//        Student s2 = new Student(); // initializing and pointing / declaring.
+//
+//        System.out.println(s1);  // gives the definition of obj => i.e what is the datatype/class of object;
 
 //      ******* Accessing Instance variable before initializing it. *******
 
-        // now before initialization of class/instance variable => if we want to access then it will print
-        // by default value of each instance variable.
-        // for type int => print 0
-        // for type string => print null
-        // for type float => print 0.0
-        // for type boolean => print false.
-        System.out.println("\nBefore Initialization of Instance variable : ");
-        System.out.println(s1.name);
-        System.out.println(s1.roll_number);
-        System.out.println(s1.marks);
-        System.out.println(s1.anything);
+//        // now before initialization of class/instance variable => if we want to access then it will print
+//        // by default value of each instance variable.
+//        // for type int => print 0
+//        // for type string => print null
+//        // for type float => print 0.0
+//        // for type boolean => print false.
+//        System.out.println("\nBefore Initialization of Instance variable : ");
+//        System.out.println(s1.name);
+//        System.out.println(s1.roll_number);
+//        System.out.println(s1.marks);
+//        System.out.println(s1.anything);
+//
+////      ****** Initialize the Instance variable ********
+//        s1.name = "Amanjeet";
+//        s1.roll_number = 1;
+//        s1.marks = 98;
+//        s1.anything = true;
+//
+////      **** Now, again access the instance variable after initialization *****
+//        System.out.println("\nAfter Initialization of Instance variable : ");
+//        System.out.println(s1.name);
+//        System.out.println(s1.roll_number);
+//        System.out.println(s1.marks);
+//        System.out.println(s1.anything);
 
-//      ****** Initialize the Instance variable ********
-        s1.name = "Amanjeet";
-        s1.roll_number = 1;
-        s1.marks = 98;
-        s1.anything = true;
+//      ***** working with constructor containing class **********
+        Human h1 = new Human(); // create an object of class Human. at the time of creating the obj.
+        // the special method i.e constructor will be called.
 
-//      **** Now, again access the instance variable after initialization *****
-        System.out.println("\nAfter Initialization of Instance variable : ");
-        System.out.println(s1.name);
-        System.out.println(s1.roll_number);
-        System.out.println(s1.marks);
-        System.out.println(s1.anything);
-
-
+        h1.display();
 
     }
 }

@@ -97,17 +97,29 @@ public class Main {
         // when we change instance attributes from one ref. variable then
         // it leads to change visible in other ref variable as well.
 
-        Student student = new Student("Amanjeet", 1, 98);
-        System.out.println("Starting display : ");
-        student.display();
-        Student other = student;
-        other.display();
-        System.out.println();
+//        Student student = new Student("Amanjeet", 1, 98);
+//        System.out.println("Starting display : ");
+//        student.display();
+//        Student other = student;
+//        other.display();
+//        System.out.println();
+//
+//        other.name = "Riya";
+//        System.out.println("After change : ");
+//        student.display();
+//        other.display();
+//        System.out.println();
 
-        other.name = "Riya";
-        System.out.println("After change : ");
-        student.display();
-        other.display();
-        System.out.println();
+        // ****** will look example of final keyword *********
+//        final int bonous = 50;
+//        bonous = 20; // will say can not assign value to bonus bcz its a final variable.
+
+//        FinalExample obj = new FinalExample();
+//        System.out.println(obj.name);
+//        System.out.println(obj.value);
+//
+//        FinalExample obj1 = obj;
+//        System.out.println(obj1.name);
+//        System.out.println(obj1.value);
     }
 }

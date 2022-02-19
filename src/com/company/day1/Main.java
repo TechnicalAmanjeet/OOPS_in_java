@@ -38,6 +38,8 @@ public class Main {
         // the above two line we can do in a single line.
         Student s2 = new Student(); // initializing and pointing / declaring.
 
+        System.out.println(s1);  // gives the definition of obj => i.e what is the datatype/class of object;
+
 //      ******* Accessing Instance variable before initializing it. *******
 
         // now before initialization of class/instance variable => if we want to access then it will print
@@ -64,6 +66,8 @@ public class Main {
         System.out.println(s1.roll_number);
         System.out.println(s1.marks);
         System.out.println(s1.anything);
+
+
 
     }
 }

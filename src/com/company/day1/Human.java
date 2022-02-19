@@ -21,8 +21,8 @@ public class Human {
         System.out.println("Total hand finger : " + this.total_hand_finger);
     }
 
-    public static void main(String[] args) {
-        Human h1 = new Human();
-        h1.display();
-    }
+//    public static void main(String[] args) {
+//        Human h1 = new Human();
+//        h1.display();
+//    }
 }

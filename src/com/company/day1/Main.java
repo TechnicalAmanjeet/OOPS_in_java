@@ -73,23 +73,41 @@ public class Main {
 //
 //        h1.display();
 
-        Student student0 = new Student("Amanjeet", 1, 89);
-        Student student1 = new Student("Riya", 2, 90);
-        Student student2 = new Student("Kismat", 3, 93);
-        Student student3 = new Student("Neha", 4, 95);
-        Student student4 = new Student("Kajal", 5, 98);
+//        Student student0 = new Student("Amanjeet", 1, 89);
+//        Student student1 = new Student("Riya", 2, 90);
+//        Student student2 = new Student("Kismat", 3, 93);
+//        Student student3 = new Student("Neha", 4, 95);
+//        Student student4 = new Student("Kajal", 5, 98);
+//
+////        student0.display();
+////        student1.display();
+////        student2.display();
+////        student3.display();
+////        student4.display();
+//
+//        Student mylove = new Student(student1);
+//        mylove.greeting();
+//        mylove.display();
+//
+////        Student random = new Student(marks= 5, "Amanjeet", 12) // it's takes data in a was as we have created in
+//        // the constructor. otherwise it gives error.
 
-//        student0.display();
-//        student1.display();
-//        student2.display();
-//        student3.display();
-//        student4.display();
 
-        Student mylove = new Student(student1);
-        mylove.greeting();
-        mylove.display();
+        // will see how to ref variable pointing to same object so
+        // when we change instance attributes from one ref. variable then
+        // it leads to change visible in other ref variable as well.
 
-//        Student random = new Student(marks= 5, "Amanjeet", 12) // it's takes data in a was as we have created in
-        // the constructor. otherwise it gives error.
+        Student student = new Student("Amanjeet", 1, 98);
+        System.out.println("Starting display : ");
+        student.display();
+        Student other = student;
+        other.display();
+        System.out.println();
+
+        other.name = "Riya";
+        System.out.println("After change : ");
+        student.display();
+        other.display();
+        System.out.println();
     }
 }

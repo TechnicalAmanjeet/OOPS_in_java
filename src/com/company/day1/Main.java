@@ -110,16 +110,53 @@ public class Main {
 //        other.display();
 //        System.out.println();
 
+
+//        // in both the cases of swaping =>
+//        // inside the swaping function value has swap but in reality its not been swap.
+//        // for int => bcz its a primitive and we know that in java function pass by value happens,
+//        // not pass by referance.
+//        // for Integer => bcz Integer class made with final => it's doesnot change.
+//
+//
+//        int a = 10, b = 20;
+//        System.out.println(a+ " " + b);
+//        swap(a,b); // after swaping this its has not been swap.
+//        System.out.println(a+ " " + b);
+//
+//        Integer n1 = 10, n2 = 20;
+//        System.out.println(n1 + " " + n2);
+//        swapm(n1,n2);
+//    }
+//    static void swapm(Integer m, Integer n){
+//        Integer temp = m;
+//        m = n;
+//        n = temp;
+//        System.out.println("under swap Integer fun : " + m + " " + n);
+//    }
+//
+//    static void swap(int m, int n){
+//        int temp = m;
+//        m = n;
+//        n = temp;
+//        System.out.println("uder the swap int fun : " + m + " " + n);
+
+
         // ****** will look example of final keyword *********
 //        final int bonous = 50;
 //        bonous = 20; // will say can not assign value to bonus bcz its a final variable.
 
-//        FinalExample obj = new FinalExample();
-//        System.out.println(obj.name);
-//        System.out.println(obj.value);
+//        FinalExample o1 = new FinalExample("Aman", 12);
+//        System.out.println(o1.name);
 //
-//        FinalExample obj1 = obj;
-//        System.out.println(obj1.name);
-//        System.out.println(obj1.value);
+//        FinalExample o2 = new FinalExample("riya", 143);
+//        System.out.println(o2.name);
+//
+//        o1 = o2;
+//        System.out.println(o1.name);
+//        System.out.println(o2.name);
+
+        Student s1 = new Student();
+        s1.display();
+        s1.bonus = 25;  // will give error as cannot assign value to a final variable once it's initialized.
     }
 }

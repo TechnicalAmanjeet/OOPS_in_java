@@ -4,6 +4,7 @@ public class Student {
     String name;
     int roll_number;
     float marks;
+    final int bonus = 50;
 //    boolean anything;
 
     // default constructor => when we provide nothing then this constructor will run.
@@ -45,6 +46,7 @@ public class Student {
         System.out.println("Name : " + this.name);
         System.out.println("Roll No. : " + this.roll_number);
         System.out.println("Marks : " + this.marks);
+        System.out.println("bonus : " + this.bonus);
     }
 
     void greeting(){

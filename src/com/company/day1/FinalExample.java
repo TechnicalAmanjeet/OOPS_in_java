@@ -4,8 +4,8 @@ public final class FinalExample {
     int value;
     String name;
 
-    FinalExample (){
-        this.value = 12;
-        this.name = "amanjeet";
+    FinalExample (String name, int value){
+        this.value = value;
+        this.name = name;
     }
 }

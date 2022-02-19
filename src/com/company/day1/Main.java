@@ -168,15 +168,23 @@ public class Main {
 //        final int x = 10;
 //        x = 12; // will through error
 
-        // However, we can modify final variable made up  of non-primitive datatype.
-        // but then also we can not assign any new value to ref. variable of that obj.
-        final ArrayList list = new ArrayList();
-        list.add(12);
-        list.add(13);
-        list.add(14);
-        System.out.println(list);
+//        // However, we can modify final variable made up  of non-primitive datatype.
+//        // but then also we can not assign any new value to ref. variable of that obj.
+//        final ArrayList list = new ArrayList();
+//        list.add(12);
+//        list.add(13);
+//        list.add(14);
+//        System.out.println(list);
+//
+//        ArrayList list1 = new ArrayList();
+////        list = list1; // will through error bcz we can't assign a value to finel variable.
 
-        ArrayList list1 = new ArrayList();
-//        list = list1; // will through error bcz we can't assign a value to finel variable.
+
+        // Now we will see the example of finalize method.
+        Student s1 = new Student();
+        for(int i=0; i<=1000000; ++i){
+//            System.out.println(i);
+            s1 = new Student(i);
+        }
     }
 }

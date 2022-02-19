@@ -23,6 +23,10 @@ public class Student {
         this ("Amanjeet", 12, 97);
     }
 
+    Student (int roll_number){
+        this.roll_number = roll_number;
+    }
+
     // when we provide 3 value as a input then this constructor will run.
     // Student aman = new Stuent("aman", 1, 98);
     // here this will be replaced by aman.
@@ -53,5 +57,13 @@ public class Student {
 
     void greeting(){
         System.out.println("Hello Guy's, My name is " + this.name);
+    }
+
+
+    // garbage collection destroyer and finalizer method.
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("object has been destroyed.." + this.roll_number);
     }
 }

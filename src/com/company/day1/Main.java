@@ -1,5 +1,7 @@
 package com.company.day1;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -155,8 +157,26 @@ public class Main {
 //        System.out.println(o1.name);
 //        System.out.println(o2.name);
 
-        Student s1 = new Student();
-        s1.display();
-        s1.bonus = 25;  // will give error as cannot assign value to a final variable once it's initialized.
+//        Student s1 = new Student();
+//        s1.display();
+//        s1.bonus = 25;  // will give error as cannot assign value to a final variable once it's initialized.
+
+
+        // Note : The immutable nature of final variable is only for primitive datatype.
+        // i.e we can only not modify those final variable which is made up of primitive datatype.
+        // eg.
+//        final int x = 10;
+//        x = 12; // will through error
+
+        // However, we can modify final variable made up  of non-primitive datatype.
+        // but then also we can not assign any new value to ref. variable of that obj.
+        final ArrayList list = new ArrayList();
+        list.add(12);
+        list.add(13);
+        list.add(14);
+        System.out.println(list);
+
+        ArrayList list1 = new ArrayList();
+//        list = list1; // will through error bcz we can't assign a value to finel variable.
     }
 }

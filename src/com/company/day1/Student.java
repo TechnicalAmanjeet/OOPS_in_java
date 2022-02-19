@@ -5,6 +5,8 @@ public class Student {
     int roll_number;
     float marks;
     final int bonus = 50;
+//    final float other; // will display error. bcz final variable has to be initalized at the time of creating it.
+
 //    boolean anything;
 
     // default constructor => when we provide nothing then this constructor will run.

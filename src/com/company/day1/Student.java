@@ -8,11 +8,16 @@ public class Student {
 
     // default constructor => when we provide nothing then this constructor will run.
     // Student aman = new Student(); => here this will be replaced by aman.
+//    Student (){
+//        this.name = "Nothing";
+//        this.roll_number = -1;
+//        this.marks = 0;
+//        System.out.println(this);
+//    }
+
     Student (){
-        this.name = "Nothing";
-        this.roll_number = -1;
-        this.marks = 0;
-        System.out.println(this);
+        // this is how you call other constructor from another constructor.
+        this ("Amanjeet", 12, 97);
     }
 
     // when we provide 3 value as a input then this constructor will run.

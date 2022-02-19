@@ -79,11 +79,14 @@ public class Main {
         Student student3 = new Student("Neha", 4, 95);
         Student student4 = new Student("Kajal", 5, 98);
 
-        student0.display();
-        student1.display();
-        student2.display();
-        student3.display();
-        student4.display();
+//        student0.display();
+//        student1.display();
+//        student2.display();
+//        student3.display();
+//        student4.display();
 
+        Student mylove = new Student(student1);
+        mylove.greeting();
+        mylove.display();
     }
 }

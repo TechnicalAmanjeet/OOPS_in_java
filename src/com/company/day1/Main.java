@@ -67,11 +67,23 @@ public class Main {
 //        System.out.println(s1.marks);
 //        System.out.println(s1.anything);
 
-//      ***** working with constructor containing class **********
-        Human h1 = new Human(); // create an object of class Human. at the time of creating the obj.
-        // the special method i.e constructor will be called.
+////      ***** working with constructor containing class **********
+//        Human h1 = new Human(); // create an object of class Human. at the time of creating the obj.
+//        // the special method i.e constructor will be called.
+//
+//        h1.display();
 
-        h1.display();
+        Student student0 = new Student("Amanjeet", 1, 89);
+        Student student1 = new Student("Riya", 2, 90);
+        Student student2 = new Student("Kismat", 3, 93);
+        Student student3 = new Student("Neha", 4, 95);
+        Student student4 = new Student("Kajal", 5, 98);
+
+        student0.display();
+        student1.display();
+        student2.display();
+        student3.display();
+        student4.display();
 
     }
 }

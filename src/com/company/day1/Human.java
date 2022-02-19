@@ -3,7 +3,8 @@ package com.company.day1;
 public class Human {
     int eye, ear, mouth, nose, hand, foot, total_hand_finger, total_feet_finger;
 
-    Human(){
+    Human (){  // it's a special method of any class. it has called by default at the time
+        // when any object creates. and it runs for that obj only and return the reference of itself.
         this.eye = this.ear = this.hand = this.foot = 2;
         this.mouth = this.nose = 1;
         this.total_feet_finger = this.total_hand_finger = 10;

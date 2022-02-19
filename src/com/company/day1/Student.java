@@ -7,6 +7,7 @@ public class Student {
 //    boolean anything;
 
     // default constructor => when we provide nothing then this constructor will run.
+    // Student aman = new Student(); => here this will be replaced by aman.
     Student (){
         this.name = "Nothing";
         this.roll_number = -1;
@@ -15,6 +16,8 @@ public class Student {
     }
 
     // when we provide 3 value as a input then this constructor will run.
+    // Student aman = new Stuent("aman", 1, 98);
+    // here this will be replaced by aman.
     Student (String name, int roll_number, float marks){
         this.name = name;
         this.roll_number = roll_number;
@@ -22,10 +25,15 @@ public class Student {
     }
 
     // constructor which takes value from other object of same datatype.
+    // Student riya = new Student(Student other); => here this will replaced by riya.
     Student (Student other){
-        this.name = other.name;
-        this.roll_number = other.roll_number;
-        this.marks = other.marks;
+        // M1
+        // this.name = other.name;
+        // this.roll_number = other.roll_number;
+        // this.marks = other.marks;
+
+        // M2
+        this(other.name, other.roll_number, other.marks);
     }
 
     void display(){

@@ -88,5 +88,8 @@ public class Main {
         Student mylove = new Student(student1);
         mylove.greeting();
         mylove.display();
+
+//        Student random = new Student(marks= 5, "Amanjeet", 12) // it's takes data in a was as we have created in
+        // the constructor. otherwise it gives error.
     }
 }

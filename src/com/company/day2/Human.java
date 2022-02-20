@@ -26,6 +26,7 @@ public class Human {
     // creating static methods.
     static void staticMethod(){
         System.out.println("messaging through static method of Human class.");
+//        System.out.println(this.fullName);  // will give error bcz we are accessing a non-static properties.
     }
 
 }

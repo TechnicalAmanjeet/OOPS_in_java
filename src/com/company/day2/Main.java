@@ -24,17 +24,32 @@ public class Main {
 
         // The popular static method => psvm => public static void main
         // we can call static properties and methods without creating an object.
-        Human.staticMethod();
-        System.out.println(Human.population); // Human.population;
+//        Human.staticMethod();
+//        System.out.println(Human.population); // Human.population;
 
 //        // we can not access non-static method from a static method.
 ////        greeting(); // error bcz we can not access non-static methods.
 //        greeting1(); // will not give error.
 
 
-        // we can call a non-static method from static method by this way.
-        Main obj = new Main();
-        obj.greeting(); // now it will not give an error.
+//        // we can call a non-static method from static method by this way.
+//        Main obj = new Main();
+//        obj.greeting(); // now it will not give an error.
+
+
+        // starting with static block.
+        System.out.println(StaticBlock.a);
+        System.out.println(StaticBlock.b);
+
+        // creating first object
+        StaticBlock sb = new StaticBlock();
+        System.out.println(sb.a);
+        System.out.println(sb.b);
+
+
+
+
+
 
     }
 

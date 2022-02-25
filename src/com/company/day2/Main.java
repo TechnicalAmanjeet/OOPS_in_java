@@ -37,18 +37,25 @@ public class Main {
 //        obj.greeting(); // now it will not give an error.
 
 
-        // starting with static block.
-        System.out.println(StaticBlock.a);
-        System.out.println(StaticBlock.b);
-
-        // creating first object
-        StaticBlock sb = new StaticBlock();
-        System.out.println(sb.a);
-        System.out.println(sb.b);
-
-
+//        // starting with static block.
+//        System.out.println(StaticBlock.a);
+//        System.out.println(StaticBlock.b);
+//
+//        // creating first object
+//        StaticBlock sb = new StaticBlock();
+//        System.out.println(sb.a);
+//        System.out.println(sb.b);
 
 
+//      // eg. of singalton class.
+        Singlton_class a = Singlton_class.getInstance("Amanjeet");
+        Singlton_class b = Singlton_class.getInstance("riya");
+
+        System.out.println(a.name);
+        System.out.println(b.name);
+
+        System.out.println(a);
+        System.out.println(b);
 
 
     }

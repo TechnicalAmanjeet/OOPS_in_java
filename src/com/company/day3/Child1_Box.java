@@ -55,4 +55,12 @@ public class Child1_Box extends Box {
     void parantAndChild(){
         System.out.println("from child1_box");
     }
+
+    void weight(){
+        System.out.println("from child1 box i.e weight.");
+    }
+
+    void common_to_3(){
+        System.out.println("from box");
+    }
 }

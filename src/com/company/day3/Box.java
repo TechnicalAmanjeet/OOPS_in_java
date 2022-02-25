@@ -40,7 +40,15 @@ public class Box {
         System.out.println("Height : " + this.h);
     }
 
+    void box() {
+        System.out.println("from box.");
+    }
+
     void parantAndChild(){
+        System.out.println("from box");
+    }
+
+    void common_to_3(){
         System.out.println("from box");
     }
 }

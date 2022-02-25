@@ -53,5 +53,7 @@ public class Main {
         Child1_Box_price b1 = new Child1_Box_price();
 //        System.out.println(b1.l + " " + b1.price); // will only be able to access all the data of Box class.
         b1.common_to_3();
+
+
     }
 }

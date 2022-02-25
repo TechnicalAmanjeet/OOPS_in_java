@@ -9,4 +9,12 @@ public class Shape {
     void area(){
         System.out.println("Area of shape.");
     }
+
+    static void a(){
+        System.out.println("from shape");
+    }
+
+    static void a(int a){
+        System.out.println("from shape a");
+    }
 }

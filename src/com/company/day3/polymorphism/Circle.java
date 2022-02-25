@@ -9,4 +9,12 @@ public class Circle extends Shape{
     void area(int a){
         System.out.println("Area of circle : " +  3.14 * a * a);
     }
+
+    static void a(){
+        System.out.println("from Circle");
+    }
+
+    static void a(int a){
+        System.out.println("from Circle a");
+    }
 }

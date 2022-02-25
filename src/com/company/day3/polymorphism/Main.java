@@ -7,9 +7,6 @@ public class Main {
         Tringle tringle = new Tringle();
         Square square = new Square();
 
-        shape.area();
-        circle.area();
-        tringle.area();
-        square.area();
+
     }
 }

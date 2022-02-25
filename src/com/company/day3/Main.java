@@ -17,18 +17,32 @@ public class Main {
 //        Box box3 = new Box(box);
 //        box3.show();
 
-        // eg. of child class
-        Child1_Box b = new Child1_Box();
-        b.show();
+//        // eg. of child class
+//        Child1_Box b = new Child1_Box();
+//        b.show();
+//
+//        Child1_Box b1 = new Child1_Box(1);
+//        b1.show();
+//
+//        Child1_Box b2 = new Child1_Box(2f);
+//        b2.show();
+//
+//        Child1_Box b3 = new Child1_Box(b);
+//        b3.show();
 
-        Child1_Box b1 = new Child1_Box(1);
-        b1.show();
+        // doing weird thing in inheritance.
+        // 1. ref. var => type parent &&& initializing => type child
+//        Box box = new Child1_Box(1,2,3,4); // ref var => Box type but referencing to Child1_box.
+//        // in this case we will be able to access all variable of Box .
+//        System.out.println(box.l + " " + box.w + " " + box.h + " ");
+//        // but will not be able to access variable of child1_box.
+////        System.out.println(box.weight).
+////        box.showWeight(); // will not be able to access those variable and methods which is only in child class.
+//
+//        // but will be able to access which is both in parent and child
+//        box.parantAndChild(); // and output will be according to child class.
 
-        Child1_Box b2 = new Child1_Box(2f);
-        b2.show();
 
-        Child1_Box b3 = new Child1_Box(b);
-        b3.show();
 
     }
 }

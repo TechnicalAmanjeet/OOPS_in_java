@@ -37,4 +37,8 @@ public class Box {
         System.out.println("Width : " + this.w);
         System.out.println("Height : " + this.h);
     }
+
+    void parantAndChild(){
+        System.out.println("from box");
+    }
 }

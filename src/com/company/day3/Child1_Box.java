@@ -47,4 +47,12 @@ public class Child1_Box extends Box {
         super.show();
         System.out.println("Weight : " + this.weight);
     }
+
+    void showWeight(){
+        System.out.println("Weight " + this.weight);
+    }
+
+    void parantAndChild(){
+        System.out.println("from child1_box");
+    }
 }

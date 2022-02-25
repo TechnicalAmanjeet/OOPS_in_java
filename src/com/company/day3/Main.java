@@ -43,6 +43,9 @@ public class Main {
 //        box.parantAndChild(); // and output will be according to child class.
 
 
+        // 2. ref var : type child &&&&& initialize : type parant.
+//        Child1_Box box1 = new Box(); // will simply give error.
+
 
     }
 }

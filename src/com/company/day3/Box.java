@@ -3,8 +3,10 @@ package com.company.day3;
 public class Box {
     int l,w,h; // contain l => length, w => width and h => height of box.
 
+
     // default constructor.
     public Box() {
+        super(); //calling by default constructor of parent class. by default every class has parent  class Object.
         this.l = this.w = this.h = -1;
     }
 

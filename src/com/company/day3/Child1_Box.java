@@ -61,6 +61,6 @@ public class Child1_Box extends Box {
     }
 
     void common_to_3(){
-        System.out.println("from box");
+        System.out.println("from weight");
     }
 }

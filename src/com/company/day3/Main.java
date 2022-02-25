@@ -46,6 +46,12 @@ public class Main {
         // 2. ref var : type child &&&&& initialize : type parant.
 //        Child1_Box box1 = new Box(); // will simply give error.
 
+        // eg. of multilevel inheritance.
+        Child1_Box_price b5 = new Child1_Box_price(1, 2, 3, 4,5);
+        b5.show();
 
+        Child1_Box_price b1 = new Child1_Box_price();
+//        System.out.println(b1.l + " " + b1.price); // will only be able to access all the data of Box class.
+        b1.common_to_3();
     }
 }

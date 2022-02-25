@@ -38,6 +38,6 @@ public class Child1_Box_price extends Child1_Box{
     }
 
     void common_to_3(){
-        System.out.println("from box");
+        System.out.println("from price");
     }
 }

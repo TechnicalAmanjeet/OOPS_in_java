@@ -31,6 +31,13 @@ public class Innerclass {
         }
     }
 
+    static class static_inside_static{
+        static int number;
+        static_inside_static(int number){
+            this.number = number;
+        }
+    }
+
     public static void main(String[] args) {
 //        Inside_non_static_class a = new Inside_non_static_class("Amanjeet");
           // above line will give error bcz we are calling non-static inner class.
@@ -42,6 +49,11 @@ public class Innerclass {
 
         outside_nonstatic_class a3 = new outside_nonstatic_class("amanjeet");
         System.out.println(a3.name);
+
+        static_inside_static a4 = new static_inside_static(10);
+        static_inside_static a5 = new static_inside_static(15);
+        System.out.println(a4.number);
+        System.out.println(a5.number);
 
     }
 }
